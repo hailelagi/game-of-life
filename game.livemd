@@ -1,0 +1,25 @@
+# Conway's game of Life
+
+## Setup
+
+```elixir
+Mix.install([
+  {:vega_lite, "~> 0.1.2"},
+  {:kino, "~> 0.3.0"}
+])
+```
+
+### Summary
+
+Conway's Game of Life is a cellular automaton that requires no players its evolution is 
+determined by entirely by its initial state which leads to increasignly complex and unpredicatable
+patterns.
+
+```elixir
+defmodule GameofLife do
+end
+```
+
+## Section
+
+###
