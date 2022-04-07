@@ -1,6 +1,6 @@
 # Life
 
-Conways game of life in a livebook
+**TODO: Add description**
 
 ## Installation
 

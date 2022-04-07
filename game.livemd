@@ -5,7 +5,8 @@
 ```elixir
 Mix.install([
   {:vega_lite, "~> 0.1.2"},
-  {:kino, "~> 0.3.0"}
+  {:kino, "~> 0.3.0"},
+  # todo: add my elixir implementation of game of life from git
 ])
 ```
 
@@ -17,9 +18,8 @@ patterns.
 
 ```elixir
 defmodule GameofLife do
+  start()
 end
 ```
 
 ## Section
-
-###
