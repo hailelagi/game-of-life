@@ -7,12 +7,11 @@ defmodule Life do
   Hello world.
 
   ## Examples
-
-      iex> Life.hello()
+      iex> Life.start()
       :world
 
   """
-  def hello do
+  def start() do
     :world
   end
 end
