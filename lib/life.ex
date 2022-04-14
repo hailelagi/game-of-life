@@ -1,17 +1,31 @@
 defmodule Life do
   @moduledoc """
-  Documentation for `Life`.
+  Documentation for `Life`
   """
+  use GenServer
+  alias Cell
 
-  @doc """
-  Hello world.
+  @impl true
+  def init(config) do
+    # seed with initial configuration
+    {:ok, config}
+  end
 
-  ## Examples
-      iex> Life.start()
-      :world
+  @impl true
+  def handle_call(:state, _, _) do
+    # return current game state/configuration
+    {:reply, nil}
+  end
 
-  """
-  def start() do
-    :world
+  @impl true
+  def handle_cast({:next, %Cell{}, _state}) do
+    {:noreply, %Cell{}}
+  end
+
+  def step() do
+    # advance state by a single phase/step
+  end
+
+  def check_rules() do
   end
 end
